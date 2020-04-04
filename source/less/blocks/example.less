@@ -1,3 +1,11 @@
+.example {
+  min-height: 705px;
+  overflow: hidden;
+
+  // TODO: temp
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
 .example__wrapper {
   .container();
 }
@@ -13,4 +21,16 @@
   line-height: 1.25;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    min-height: 1081px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    min-height: 652px;
+  }
 }

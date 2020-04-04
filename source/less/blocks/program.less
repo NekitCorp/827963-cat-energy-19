@@ -1,3 +1,10 @@
+.program {
+  min-height: 552px;
+
+  // TODO: temp
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
 .program__wrapper {
   .container();
 }
@@ -36,4 +43,20 @@
   background-color: @leaf;
   width: 50px;
   height: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .program {
+    min-height: 774px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program {
+    min-height: 372px;
+
+    // TODO: temp
+    height: 372px;
+    overflow: hidden;
+  }
 }

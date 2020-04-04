@@ -1,7 +1,12 @@
 .about {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  // TODO: temp
+  // background-image: url("../img/index-background-mobile@1x.jpg");
+  // background-repeat: no-repeat;
   overflow: hidden;
+  min-height: 502px;
+
+  // TODO: temp
+  background-color: rgba(0, 255, 0, 0.3);
 }
 
 .about__wrapper {
@@ -26,4 +31,16 @@
   line-height: 1;
   margin-top: 29px;
   margin-bottom: 19px;
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    min-height: 867px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    min-height: 663px;
+  }
 }

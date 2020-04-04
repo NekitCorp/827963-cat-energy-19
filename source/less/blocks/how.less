@@ -1,7 +1,33 @@
+.how {
+  min-height: 447px;
+  overflow: hidden;
+
+  // TODO: temp
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
 .how__wrapper {
   .container();
 }
 
+.how__item {
+  display: flex;
+}
+
 .how__icon {
   background-color: @leaf;
+}
+
+@media (min-width: @tablet-width) {
+  .how {
+    min-height: 780px;
+    border-bottom: 1px solid @light-gray;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .how {
+    min-height: 460px;
+    border: none;
+  }
 }
