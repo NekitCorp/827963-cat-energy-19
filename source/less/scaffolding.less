@@ -1,13 +1,26 @@
 body {
   font-family: "Oswald", sans-serif;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
 
-  // TODO: временно, для удобства мобильной верстки
-  width: 320px;
-  margin: 0 auto;
-  background-color: white;
+  background: url("../img/preview/cat-energy-index-mobile.png") no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 750px;
 }
 
-// TODO: временно, для удобства мобильной верстки
-html {
-  background-color: #eeeeee;
+@media (min-width: @tablet-width) {
+  body {
+    background: url("../img/preview/cat-energy-index-tablet.png") no-repeat 50%
+      0;
+    background-size: 768px auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background: url("../img/preview/cat-energy-index-desktop.png") no-repeat 50%
+      0;
+    background-size: 1440px auto;
+  }
 }
