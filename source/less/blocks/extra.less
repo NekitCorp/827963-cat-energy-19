@@ -1,3 +1,27 @@
-.extra__wrapper {
-  .container();
+.extra {
+  overflow: hidden;
+  min-height: 966px;
+
+  // TODO: temp
+  background-color: rgba(255, 0, 0, 0.3);
+  height: 966px;
+}
+
+@media (min-width: @tablet-width) {
+  .extra {
+    min-height: 1084px;
+
+    // TODO: temp
+    height: 1084px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra {
+    min-height: 566px;
+
+    // TODO: temp
+    height: 566px;
+    background-color: rgba(0, 0, 255, 0.3);
+  }
 }
