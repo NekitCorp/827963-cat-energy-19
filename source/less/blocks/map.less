@@ -1,0 +1,29 @@
+.map {
+  min-height: 362px;
+  position: relative;
+
+  // TODO: temp
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.map__image {
+  display: block;
+}
+
+.map__pin {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    min-height: 396px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    min-height: 400px;
+  }
+}
