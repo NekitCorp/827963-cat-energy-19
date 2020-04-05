@@ -3,6 +3,13 @@
   overflow: hidden;
 }
 
+.example__image {
+  background-image: url("../../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+  width: 311px;
+  height: 232px;
+}
+
 .example__cost {
   color: @black;
   line-height: 1.43;
@@ -19,11 +26,26 @@
 @media (min-width: @tablet-width) {
   .example {
     min-height: 1081px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example__image {
+    background-image: url("../../img/before-tablet@1x.png");
+    width: 676px;
+    height: 499px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
     min-height: 652px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .example__image {
+    background-image: url("../../img/before-desktop@1x.png");
+    width: 730px;
   }
 }

@@ -1,14 +1,5 @@
 .catalog {
-  overflow: hidden;
   min-height: 1776px;
-
-  // TODO: temp
-  background-color: rgba(0, 255, 0, 0.3);
-  height: 1776px;
-}
-
-.catalog__wrapper {
-  .container();
 }
 
 .catalog__order {
@@ -18,17 +9,16 @@
 @media (min-width: @tablet-width) {
   .catalog {
     min-height: 2427px;
+  }
 
-    // TODO: temp
-    height: 2427px;
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog {
     min-height: 1305px;
-
-    // TODO: temp
-    height: 1305px;
   }
 }
