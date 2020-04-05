@@ -1,6 +1,5 @@
 // TODO: temp
 if (document.location.hash === "#pixel-perfect") {
-  console.log(document.location.pathname);
   if (document.location.pathname === "/") {
     if (window.matchMedia("(min-width: 1200px)").matches) {
       document.body.style.background =
