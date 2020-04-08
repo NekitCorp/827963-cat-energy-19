@@ -1,5 +1,13 @@
-.social__wrapper {
-  .container();
+.social {
+  min-height: 236px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.social__logo {
+  text-align: center;
 }
 
 .social__list {
@@ -10,6 +18,11 @@
 .social__link {
   font-size: 0;
   display: inline-block;
+}
+
+.social__academy {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social__link--vkontakte {
@@ -31,4 +44,13 @@
   height: 19px;
   background-image: url("../../img/icon-fb.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    min-height: 150px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
