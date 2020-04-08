@@ -1,20 +1,21 @@
 .about {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  overflow: hidden;
   min-height: 502px;
-  margin: 0 -20px;
-  background-size: 320px 305px;
+  position: relative;
+  padding-top: 29px;
+  box-sizing: border-box;
 }
 
-.about__wrapper {
-  padding: 0 20px;
+.about__background-image {
+  margin: 0 -20px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
 }
 
 .about__can-image {
   display: block;
   margin: 0 auto;
-  margin-bottom: 3px;
+  margin-bottom: 7px;
 }
 
 .about__blockquote {
@@ -27,7 +28,7 @@
   color: @white;
   text-align: center;
   line-height: 1;
-  margin-top: 29px;
+  margin-top: 0;
   margin-bottom: 19px;
 }
 
@@ -37,17 +38,25 @@
     position: relative;
     background-image: none;
     margin: 0;
+    padding: 28px 203px 0 87px;
   }
 
-  .about__wrapper {
-    padding-left: 54px;
-    padding-right: 203px;
-    padding-top: 28px;
+  .about__background-image {
+    display: none;
   }
 
   .about__title {
     color: @black;
     font-size: 60px;
+    text-align: left;
+    margin-bottom: 41px;
+  }
+
+  .about__blockquote {
+    color: @black;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 48px;
   }
 
   .about__can-image {
@@ -55,18 +64,38 @@
     height: 609px;
     position: absolute;
     bottom: 0;
+    left: 0;
     z-index: -1;
     margin: 0;
+  }
+
+  .about__pick-up {
+    width: 245px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about {
     min-height: 663px;
+    padding: 109px 600px 0 80px;
+  }
+
+  .about__background-image {
+    display: block;
+    top: -113px;
+    right: -90px;
+    width: 720px;
+    height: 696px;
+  }
+
+  .about__blockquote {
+    margin-bottom: 53px;
   }
 
   .about__can-image {
     width: 552px;
     height: 499px;
+    left: 450px;
+    top: 28px;
   }
 }
