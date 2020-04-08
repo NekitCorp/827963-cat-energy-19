@@ -10,7 +10,7 @@
     <script defer src="./js/pixel-perfect.js"></script>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--no-js">
       <div class="page-header__wrapper">
         <div class="page-header__main">
           <a class="page-header__logo"></a>
@@ -22,7 +22,7 @@
             Открыть меню
           </button>
         </div>
-        <nav id="menu" class="main-nav main-nav--mobile-close">
+        <nav id="menu" class="main-nav">
           <ul class="main-nav__list list-reset">
             <li class="main-nav__item main-nav__item--active">
               <a>Главная</a>
@@ -48,13 +48,23 @@
             <blockquote class="about__blockquote blockquote">
               Занялся собой? Займись котом!
             </blockquote>
-            <img
-              class="about__can-image"
-              src="./img/index-can-mobile@1x.png"
-              width="280"
-              height="270"
-              alt="Банка с продукцией"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./img/index-can-desktop@1x.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/index-can-tablet@1x.jpg"
+              />
+              <img
+                src="./img/index-can-mobile@1x.png"
+                alt="Банка с продукцией"
+                class="about__can-image"
+                width="280"
+                height="270"
+              />
+            </picture>
             <a class="program__pick-up button" href="form.html"
               >Подобрать программу</a
             >
