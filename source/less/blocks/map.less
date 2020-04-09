@@ -5,12 +5,13 @@
   height: 362px;
   position: relative;
   margin-left: -20px;
+  background-position: 0 -38px;
 }
 
 .map__pin {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 137px;
+  left: 131px;
 }
 
 @media (min-width: @tablet-width) {
@@ -19,6 +20,14 @@
     width: 768px;
     background-image: url("../../img/bg-map-tablet@1x.png");
     margin-left: -30px;
+    background-position: 0 -4px;
+  }
+
+  .map__pin {
+    width: 124px;
+    height: 106px;
+    top: 141px;
+    left: 333px;
   }
 }
 
@@ -28,5 +37,11 @@
     height: 400px;
     background-image: url("../../img/bg-map-desktop@1x.png");
     margin-left: -110px;
+    background-position: 0 0;
+  }
+
+  .map__pin {
+    top: 152px;
+    left: 1002px;
   }
 }

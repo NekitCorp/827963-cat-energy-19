@@ -24,26 +24,26 @@
 }
 
 .how__icon--leaf {
-  background-image: url(../../img/advantage-leaf@1x.png);
+  background-image: url("../../img/advantage-leaf@1x.png");
 }
 
 .how__icon--water {
-  background-image: url(../../img/advantage-powder@1x.png);
+  background-image: url("../../img/advantage-powder@1x.png");
 }
 
 .how__icon--dining {
-  background-image: url(../../img/advantage-dining@1x.png);
+  background-image: url("../../img/advantage-dining@1x.png");
 }
 
 .how__icon--clock {
-  background-image: url(../../img/advantage-clock@1x.png);
+  background-image: url("../../img/advantage-clock@1x.png");
 }
 
 @media (min-width: @tablet-width) {
   .how {
     min-height: 780px;
     border-bottom: 1px solid @light-gray;
-    margin: 0px -30px;
+    margin: 0 -30px;
     padding: 0 30px;
   }
 
@@ -71,7 +71,7 @@
       margin-right: auto;
     }
 
-    &:after {
+    &::after {
       content: attr(data-number);
       color: @white-three;
       position: absolute;
@@ -115,7 +115,7 @@
       margin-right: 80px;
     }
 
-    &:after {
+    &::after {
       right: 0;
     }
   }

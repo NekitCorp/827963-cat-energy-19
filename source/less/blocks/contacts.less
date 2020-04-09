@@ -2,11 +2,13 @@
   min-height: 114px;
   overflow: hidden;
   display: flex;
+  align-items: center;
 }
 
 .contants__title {
   font-size: 16px;
   color: @black;
+  margin-right: 25px;
   line-height: 1.25;
   font-weight: normal;
   text-transform: uppercase;
@@ -19,6 +21,25 @@
 @media (min-width: @tablet-width) {
   .contacts {
     min-height: 201px;
+    padding: 0 41px;
+    justify-content: space-between;
+  }
+
+  .contants__title {
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .contants__divider {
+    display: block;
+    height: 16px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    width: 190px;
+    line-height: 1.25;
+    text-align: end;
   }
 }
 
@@ -28,5 +49,14 @@
     z-index: 2;
     background: @white;
     top: 95px;
+    padding: 0 76px;
+  }
+
+  .contants__title {
+    margin-right: 50px;
+  }
+
+  .contacts__text {
+    text-align: start;
   }
 }
