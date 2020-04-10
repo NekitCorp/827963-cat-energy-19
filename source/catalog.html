@@ -10,7 +10,7 @@
     <script defer src="./js/pixel-perfect.js"></script>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--no-js">
       <div class="page-header__wrapper">
         <div class="page-header__main">
           <a class="page-header__logo"></a>
@@ -22,13 +22,13 @@
             Открыть меню
           </button>
         </div>
-        <nav id="menu" class="main-nav main-nav--mobile-close">
+        <nav id="menu" class="main-nav">
           <ul class="main-nav__list list-reset">
-            <li class="main-nav__item main-nav__item--active">
-              <a>Главная</a>
-            </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a href="/">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a>Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a href="form.html">Подбор программы</a>
@@ -41,16 +41,26 @@
     <main class="page-main">
       <div class="page-main__wrapper">
         <section class="catalog">
-          <h1 class="heading">Каталог продукции</h1>
+          <h1 class="catalog__title heading">Каталог продукции</h1>
           <ul class="catalog__list list-reset">
             <li class="catalog__item item">
-              <img
-                class="item__image"
-                src="./img/chicken-small-mobile@1x.jpg"
-                width="140"
-                height="144"
-                alt="Продукция"
-              />
+              <picture class="item__picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/chicken-small-desktop@1x.png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/chicken-small-tablet@1x.png"
+                />
+                <img
+                  class="item__image item__image--small"
+                  src="./img/chicken-small-mobile@1x.jpg"
+                  width="140"
+                  height="144"
+                  alt="Продукция"
+                />
+              </picture>
               <table class="item__points">
                 <caption class="item__title">
                   Cat Energy PRO 500 г
@@ -320,7 +330,10 @@
             Приглашаем к сотрудничеству дилеров!
           </h2>
           <p class="contacts__text text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8<span
+              class="contants__divider"
+            ></span>
+            Санкт-Петербург
           </p>
         </section>
 
@@ -367,11 +380,11 @@
             </li>
           </ul>
           <div class="social__academy">
-            <p>HTML Academy</p>
+            <p class="social__academy-text">HTML Academy</p>
             <img
               src="./img/htmlacademy.svg"
-              width="27"
-              height="34"
+              width="40"
+              height="50"
               alt="Логотип HTML Academy"
             />
           </div>

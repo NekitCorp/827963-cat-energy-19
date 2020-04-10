@@ -22,7 +22,7 @@ if (document.location.hash === "#pixel-perfect") {
         'url("../img/preview/cat-energy-catalog-tablet.png") no-repeat 50% 0';
     } else {
       document.body.style.background =
-        'url("../img/preview/cat-energy-catalog-mobile.png") no-repeat 50% 0';
+        'url("../img/preview/cat-energy-catalog-mobile.png") no-repeat 50% -198px';
     }
   }
 

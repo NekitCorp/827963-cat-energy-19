@@ -2,12 +2,27 @@
   border-top: 1px solid @light-gray;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.item__picture {
+  height: 144px;
+}
+
+.item__points {
+  flex-grow: 1;
 }
 
 .item__points td {
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1.2;
+  color: @greyish-brown;
+  padding: 0;
+
+  &:last-child {
+    text-align: end;
+  }
 }
 
 .item__title {
@@ -16,10 +31,33 @@
   color: @black;
   line-height: 1.25;
   text-transform: uppercase;
+  text-align: left;
+  padding: 21px 50px 12px 0;
 }
 
 @media (min-width: @tablet-width) {
+  .item {
+    position: relative;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+
   .item__points {
     width: 100%;
+  }
+
+  .item__image {
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .item__image--small {
+    width: 161px;
+    height: 171px;
+  }
+
+  .item__image--big {
+    width: 195px;
+    height: 208px;
   }
 }
