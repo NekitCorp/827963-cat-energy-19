@@ -34,6 +34,9 @@
     height: 431px;
     margin: 0;
     padding: 0;
+    padding: 0 38px;
+    padding-top: 163px;
+    box-sizing: border-box;
   }
 
   .catalog__list {
@@ -41,11 +44,23 @@
     flex-wrap: wrap;
     flex-grow: 1;
     justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .catalog__order {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog {
     min-height: 1305px;
+    padding-top: 75px;
+  }
+
+  .catalog__item {
+    width: 245px;
   }
 }

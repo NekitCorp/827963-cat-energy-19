@@ -33,3 +33,48 @@
   background-color: @white-three;
   color: @greyish-brown;
 }
+
+@media (min-width: @tablet-width) {
+  .more {
+    border: 1px solid @light-gray;
+    padding-top: 27px;
+  }
+
+  .more__plus-icon {
+    width: 61px;
+    height: 61px;
+  }
+
+  .more__title {
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    padding: 0 50px;
+    margin-top: 43px;
+  }
+
+  .more__description {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 27px;
+    padding: 0 20px;
+    line-height: normal;
+  }
+
+  .more__button {
+    margin-top: 85px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more__title {
+    padding: 0 10px;
+  }
+
+  .more__description {
+    padding: 0;
+  }
+}
