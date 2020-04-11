@@ -12,7 +12,7 @@
   padding: 0 20px;
   overflow: hidden;
 
-  &:after {
+  &::after {
     content: "";
     height: 3px;
     width: 100vw;
@@ -31,16 +31,16 @@
     padding: 0 30px;
     padding-left: 67px;
 
-    &:after,
-    &:before {
+    &::after,
+    &::before {
       top: 10px;
     }
 
-    &:after {
+    &::after {
       margin-left: 36px;
     }
 
-    &:before {
+    &::before {
       content: "";
       height: 3px;
       width: 100px;
@@ -59,11 +59,11 @@
     padding: 0 110px;
     padding-left: 109px;
 
-    &:after {
+    &::after {
       margin-left: 36px;
     }
 
-    &:before {
+    &::before {
       left: -30px;
     }
   }
