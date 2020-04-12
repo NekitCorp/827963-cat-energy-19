@@ -3,6 +3,17 @@
   position: relative;
   padding-top: 29px;
   box-sizing: border-box;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 305px;
+    background-color: #65a93c;
+    left: calc((100vw - 280px) / -2);
+    top: 0;
+    z-index: -2;
+  }
 }
 
 .about__background-image {
@@ -43,6 +54,10 @@
     background-image: none;
     margin: 0;
     padding: 28px 203px 0 87px;
+
+    &::after {
+      content: none;
+    }
   }
 
   .about__background-image {
@@ -83,6 +98,15 @@
   .about {
     min-height: 663px;
     padding: 109px 600px 0 80px;
+
+    &::after {
+      content: "";
+      width: calc((100vw - 1220px) / 2);
+      height: 696px;
+      top: -113px;
+      left: auto;
+      right: calc((100vw - 1220px) / -2);
+    }
   }
 
   .about__background-image {

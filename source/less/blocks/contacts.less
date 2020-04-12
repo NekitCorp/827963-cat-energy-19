@@ -4,8 +4,8 @@
   display: flex;
   align-items: center;
   background-color: @light-gray;
-  margin: 0 -20px;
-  padding: 0 20px;
+  margin: 0 calc((100vw - 280px) / -2);
+  padding: 0 calc((100vw - 280px) / 2);
 }
 
 .contacts--index {
@@ -28,9 +28,9 @@
 @media (min-width: @tablet-width) {
   .contacts {
     min-height: 201px;
-    padding: 0 71px;
     justify-content: space-between;
-    margin: 0 -30px;
+    margin: 0 calc((100vw - 708px) / -2);
+    padding: 0 calc((100vw - 708px + 41px) / 2);
   }
 
   .contants__title {
@@ -56,6 +56,7 @@
     z-index: 2;
     background: @white;
     top: 95px;
+    margin: 0;
     padding: 0 76px;
   }
 

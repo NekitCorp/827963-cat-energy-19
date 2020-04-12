@@ -1,7 +1,7 @@
 .example {
   min-height: 705px;
-  margin: 0 -20px;
-  padding: 0 20px;
+  margin: 0 calc((100vw - 280px) / -2);
+  padding: 0 calc((100vw - 280px) / 2);
   background-color: @white-three;
 }
 
@@ -54,11 +54,13 @@
     flex-wrap: wrap;
     background-color: transparent;
     position: relative;
+    margin: 0;
+    padding: 0;
 
     &::after {
       content: "";
-      width: 768px;
-      left: -10px;
+      width: 100vw;
+      left: calc((100vw - 708px) / -2);
       bottom: 0;
       position: absolute;
       height: 462px;
@@ -117,8 +119,8 @@
     flex-wrap: nowrap;
 
     &::after {
-      width: 1440px;
-      left: -90px;
+      width: 100vw;
+      left: calc((100vw - 1220px) / -2);
       height: 462px;
     }
   }

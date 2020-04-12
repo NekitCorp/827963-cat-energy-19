@@ -5,8 +5,8 @@
   flex-wrap: wrap;
   flex-direction: column;
   background-color: @light-gray;
-  margin: 0 -20px;
-  padding: 0 20px;
+  margin: 0 calc((100vw - 280px) / -2);
+  padding: 0 calc((100vw - 280px) / 2);
   padding-top: 39px;
 }
 
@@ -69,8 +69,8 @@
 @media (min-width: @tablet-width) {
   .social {
     min-height: 150px;
-    margin: 0 -30px;
-    padding: 0 30px;
+    margin: 0 calc((100vw - 708px) / -2);
+    padding: 0 calc((100vw - 708px) / 2);
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -114,8 +114,8 @@
 
 @media (min-width: @desktop-width) {
   .social {
-    margin: 0 -110px;
-    padding: 0 110px;
+    margin: 0 calc((100vw - 1220px) / -2);
+    padding: 0 calc((100vw - 1220px) / 2);
   }
 
   .social__link--vkontakte {
