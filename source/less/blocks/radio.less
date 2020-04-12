@@ -41,17 +41,17 @@
   border-color: @pinkish-grey-two;
 }
 
-.radio__checkmark:after {
+.radio__checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.radio input:checked ~ .radio__checkmark:after {
+.radio input:checked ~ .radio__checkmark::after {
   display: block;
 }
 
-.radio .radio__checkmark:after {
+.radio .radio__checkmark::after {
   margin: auto;
   top: 0;
   left: 0;
@@ -76,7 +76,7 @@
     width: 38px;
   }
 
-  .radio .radio__checkmark:after {
+  .radio .radio__checkmark::after {
     width: 18px;
     height: 18px;
   }

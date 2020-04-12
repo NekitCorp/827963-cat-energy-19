@@ -41,7 +41,7 @@
     <main class="page-main">
       <div class="page-main__wrapper">
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-          <h1 class="heading">Подбор программы</h1>
+          <h1 class="form__title heading">Подбор программы</h1>
           <blockquote class="form__blockquote blockquote">
             Заполните анкету и мы подберем программу питания для вашего кота
           </blockquote>
@@ -91,7 +91,9 @@
             </label>
           </div>
 
-          <p class="form__group-label heading heading--line">
+          <p
+            class="form__group-label heading heading--line heading--line-multi"
+          >
             Контактные данные (владельца кота)
           </p>
 
@@ -122,13 +124,17 @@
           </div>
 
           <p class="form__group-label heading heading--line">Комментарий</p>
-          <div class="form__row">
+          <div class="form__row form__comment-block">
             <textarea name="comment" rows="10">
 Расскажите обо всех повадках кота</textarea
             >
           </div>
 
-          <p class="form__group-label heading heading--line">Дополнительно</p>
+          <p
+            class="form__group-label form__group-label--extra heading heading--line"
+          >
+            Дополнительно
+          </p>
           <div class="form__row form__extra-block">
             <label class="checkbox"
               >Сахарозаменитель
