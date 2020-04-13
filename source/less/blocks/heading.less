@@ -24,6 +24,15 @@
   }
 }
 
+@media (max-width: @mobile-width-only) {
+  .heading--line-multi {
+    &::after {
+      margin-left: 46px;
+      top: -18px;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .heading--line {
     font-size: 36px;

@@ -41,14 +41,14 @@
     <main class="page-main">
       <div class="page-main__wrapper">
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-          <h1 class="heading">Подбор программы</h1>
+          <h1 class="form__title heading">Подбор программы</h1>
           <blockquote class="form__blockquote blockquote">
             Заполните анкету и мы подберем программу питания для вашего кота
           </blockquote>
 
           <div class="form__person-block">
             <div class="form__row">
-              <label for="name">Имя:*</label>
+              <label for="name" class="form__label">Имя:*</label>
               <input
                 name="name"
                 type="text"
@@ -58,7 +58,7 @@
               />
             </div>
             <div class="form__row">
-              <label for="weight">Вес (кг):*</label>
+              <label for="weight" class="form__label">Вес (кг):*</label>
               <input
                 name="weight"
                 type="number"
@@ -68,36 +68,38 @@
               />
             </div>
             <div class="form__row">
-              <label for="age">Возраст (лет):</label>
+              <label for="age" class="form__label">Возраст (лет):</label>
               <input name="age" type="number" id="age" value="7" />
             </div>
           </div>
 
           <div class="form__row form__program-block">
-            <label>
-              <input
-                type="radio"
-                name="program"
-                value="slim"
-                checked
-              />Похудение</label
-            >
-            <label>
-              <input type="radio" name="program" value="pro" />Набор массы
+            <label class="radio"
+              >Похудение
+              <input type="radio" name="program" value="slim" checked />
+              <span class="radio__checkmark"></span>
             </label>
-            <label>
-              <input type="radio" name="program" value="advice" />Не знаю (Нужен
-              ваш совет)
+            <label class="radio"
+              >Набор массы
+              <input type="radio" name="program" value="pro" />
+              <span class="radio__checkmark"></span>
+            </label>
+            <label class="radio"
+              >Не знаю (Нужен ваш совет)
+              <input type="radio" name="program" value="advice" />
+              <span class="radio__checkmark"></span>
             </label>
           </div>
 
-          <p class="form__group-label heading heading--line">
+          <p
+            class="form__group-label heading heading--line heading--line-multi"
+          >
             Контактные данные (владельца кота)
           </p>
 
           <div class="form__contacts-block">
             <div class="form__row">
-              <label for="email">E-mail:*</label>
+              <label for="email" class="form__label">E-mail:*</label>
               <input
                 name="email"
                 type="email"
@@ -108,7 +110,7 @@
               <span class="form__email-addon"></span>
             </div>
             <div class="form__row">
-              <label for="email">Телефон:*</label>
+              <label for="email" class="form__label">Телефон:*</label>
               <input
                 name="phone"
                 type="tel"
@@ -122,35 +124,38 @@
           </div>
 
           <p class="form__group-label heading heading--line">Комментарий</p>
-          <div class="form__row">
+          <div class="form__row form__comment-block">
             <textarea name="comment" rows="10">
 Расскажите обо всех повадках кота</textarea
             >
           </div>
 
-          <p class="form__group-label heading heading--line">Дополнительно</p>
+          <p
+            class="form__group-label form__group-label--extra heading heading--line"
+          >
+            Дополнительно
+          </p>
           <div class="form__row form__extra-block">
-            <div>
-              <input
-                type="checkbox"
-                name="sweetener"
-                id="extra-sweetener"
-                checked
-              />
-              <label for="extra-sweetener">Сахарозаменитель</label>
-            </div>
-            <div>
-              <input type="checkbox" name="water" id="extra-water" />
-              <label for="extra-water">Питьевая вода</label>
-            </div>
-            <div>
-              <input type="checkbox" name="milk" id="extra-milk" />
-              <label for="extra-milk">Молоко</label>
-            </div>
-            <div>
-              <input type="checkbox" name="vitamins" id="extra-vitamins" />
-              <label for="extra-vitamins">Витамины</label>
-            </div>
+            <label class="checkbox"
+              >Сахарозаменитель
+              <input type="checkbox" name="sweetener" checked />
+              <span class="checkbox__checkmark"></span>
+            </label>
+            <label class="checkbox"
+              >Питьевая вода
+              <input type="checkbox" name="water" />
+              <span class="checkbox__checkmark"></span>
+            </label>
+            <label class="checkbox"
+              >Молоко
+              <input type="checkbox" name="milk" />
+              <span class="checkbox__checkmark"></span>
+            </label>
+            <label class="checkbox"
+              >Витамины
+              <input type="checkbox" name="vitamins" />
+              <span class="checkbox__checkmark"></span>
+            </label>
           </div>
 
           <input
