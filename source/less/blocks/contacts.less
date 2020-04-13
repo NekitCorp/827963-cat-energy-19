@@ -1,15 +1,15 @@
 .contacts {
-  min-height: 114px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
   background-color: @light-gray;
-  margin: 0 -20px;
-  padding: 0 20px;
+
+  &--index {
+    background-color: @white;
+  }
 }
 
-.contacts--index {
-  background-color: @white;
+.contacts__wrapper {
+  min-height: 114px;
+  display: flex;
+  align-items: center;
 }
 
 .contants__title {
@@ -26,11 +26,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
+  .contacts__wrapper {
     min-height: 201px;
-    padding: 0 71px;
     justify-content: space-between;
-    margin: 0 -30px;
   }
 
   .contants__title {
@@ -51,12 +49,17 @@
 }
 
 @media (min-width: @desktop-width) {
-  .contacts {
+  .contacts__wrapper {
     position: absolute;
-    z-index: 2;
+    box-sizing: border-box;
+    width: 570px;
+    height: 201px;
     background: @white;
-    top: 95px;
     padding: 0 76px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    z-index: 2;
   }
 
   .contants__title {

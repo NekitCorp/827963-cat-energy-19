@@ -1,9 +1,12 @@
 .more {
+  border-top: 1px solid @light-gray;
+  border-bottom: 1px solid @light-gray;
+}
+
+.more__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid @light-gray;
-  border-bottom: 1px solid @light-gray;
 }
 
 .more__title {
@@ -37,7 +40,12 @@
 @media (min-width: @tablet-width) {
   .more {
     border: 1px solid @light-gray;
+    padding-top: 0;
+  }
+
+  .more__wrapper {
     padding-top: 27px;
+    width: auto;
   }
 
   .more__plus-icon {

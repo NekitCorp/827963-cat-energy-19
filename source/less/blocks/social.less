@@ -1,12 +1,13 @@
 .social {
+  background-color: @light-gray;
+}
+
+.social__wrapper {
   min-height: 236px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: @light-gray;
-  margin: 0 -20px;
-  padding: 0 20px;
   padding-top: 39px;
 }
 
@@ -67,13 +68,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .social {
+  .social__wrapper {
     min-height: 150px;
-    margin: 0 -30px;
-    padding: 0 30px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
   }
 
   .social__logo {
@@ -113,11 +113,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .social {
-    margin: 0 -110px;
-    padding: 0 110px;
-  }
-
   .social__link--vkontakte {
     margin-left: 413px;
   }

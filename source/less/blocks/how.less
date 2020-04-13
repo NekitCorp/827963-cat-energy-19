@@ -1,10 +1,12 @@
-.how {
+.how__wrapper {
   min-height: 447px;
-  overflow: hidden;
+  padding-top: 30px;
+  box-sizing: border-box;
 }
 
 .how__title {
   margin-bottom: 38px;
+  margin-top: 0;
 }
 
 .how__item {
@@ -41,16 +43,17 @@
 
 @media (min-width: @tablet-width) {
   .how {
-    min-height: 780px;
     border-bottom: 1px solid @light-gray;
-    margin: 0 -30px;
-    padding: 0 30px;
+  }
+
+  .how__wrapper {
+    min-height: 780px;
+    padding-top: 45px;
   }
 
   .how__title {
     font-size: 60px;
     margin-bottom: 38px;
-    margin-top: 45px;
   }
 
   .how__list {
@@ -97,12 +100,12 @@
 
 @media (min-width: @desktop-width) {
   .how {
-    min-height: 460px;
     border: none;
   }
 
-  .how__title {
-    margin-top: 73px;
+  .how__wrapper {
+    min-height: 460px;
+    padding-top: 73px;
   }
 
   .how__item {
