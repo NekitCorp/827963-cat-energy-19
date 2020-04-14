@@ -10,28 +10,30 @@
     <script defer src="./js/pixel-perfect.js"></script>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--no-js">
       <div class="page-header__wrapper">
-        <div class="page-header__main">
-          <a class="page-header__logo"></a>
-          <button
-            id="menu-toggle"
-            class="page-header__toggle page-header__toggle--open"
-            type="button"
-          >
-            Открыть меню
-          </button>
+        <div class="page-header__main-wrapper">
+          <div class="page-header__main container">
+            <a class="page-header__logo"></a>
+            <button
+              id="menu-toggle"
+              class="page-header__toggle page-header__toggle--open"
+              type="button"
+            >
+              Открыть меню
+            </button>
+          </div>
         </div>
-        <nav id="menu" class="main-nav main-nav--mobile-close">
+        <nav id="menu" class="main-nav">
           <ul class="main-nav__list list-reset">
-            <li class="main-nav__item main-nav__item--active">
-              <a>Главная</a>
+            <li class="main-nav__item">
+              <a href="/">Главная</a>
             </li>
             <li class="main-nav__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
+            <li class="main-nav__item main-nav__item--active">
+              <a>Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -39,16 +41,19 @@
     </header>
 
     <main class="page-main">
-      <div class="page-main__wrapper">
-        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-          <h1 class="heading">Подбор программы</h1>
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+        <h1 class="form__title heading container">Подбор программы</h1>
+
+        <div class="container">
           <blockquote class="form__blockquote blockquote">
             Заполните анкету и мы подберем программу питания для вашего кота
           </blockquote>
+        </div>
 
+        <div class="form__info-block container">
           <div class="form__person-block">
             <div class="form__row">
-              <label for="name">Имя:*</label>
+              <label for="name" class="form__label">Имя:*</label>
               <input
                 name="name"
                 type="text"
@@ -58,7 +63,7 @@
               />
             </div>
             <div class="form__row">
-              <label for="weight">Вес (кг):*</label>
+              <label for="weight" class="form__label">Вес (кг):*</label>
               <input
                 name="weight"
                 type="number"
@@ -68,36 +73,42 @@
               />
             </div>
             <div class="form__row">
-              <label for="age">Возраст (лет):</label>
+              <label for="age" class="form__label">Возраст (лет):</label>
               <input name="age" type="number" id="age" value="7" />
             </div>
           </div>
 
           <div class="form__row form__program-block">
-            <label>
-              <input
-                type="radio"
-                name="program"
-                value="slim"
-                checked
-              />Похудение</label
-            >
-            <label>
-              <input type="radio" name="program" value="pro" />Набор массы
+            <label class="radio"
+              >Похудение
+              <input type="radio" name="program" value="slim" checked />
+              <span class="radio__checkmark"></span>
             </label>
-            <label>
-              <input type="radio" name="program" value="advice" />Не знаю (Нужен
-              ваш совет)
+            <label class="radio"
+              >Набор массы
+              <input type="radio" name="program" value="pro" />
+              <span class="radio__checkmark"></span>
+            </label>
+            <label class="radio"
+              >Не знаю (Нужен ваш совет)
+              <input type="radio" name="program" value="advice" />
+              <span class="radio__checkmark"></span>
             </label>
           </div>
+        </div>
 
-          <p class="form__group-label heading heading--line">
-            Контактные данные (владельца кота)
-          </p>
+        <div class="line">
+          <div class="container">
+            <p class="form__group-label heading heading--line">
+              Контактные данные (владельца кота)
+            </p>
+          </div>
+        </div>
 
+        <div class="container">
           <div class="form__contacts-block">
             <div class="form__row">
-              <label for="email">E-mail:*</label>
+              <label for="email" class="form__label">E-mail:*</label>
               <input
                 name="email"
                 type="email"
@@ -108,7 +119,7 @@
               <span class="form__email-addon"></span>
             </div>
             <div class="form__row">
-              <label for="email">Телефон:*</label>
+              <label for="email" class="form__label">Телефон:*</label>
               <input
                 name="phone"
                 type="tel"
@@ -120,39 +131,60 @@
               <span class="form__phone-addon"></span>
             </div>
           </div>
+        </div>
 
-          <p class="form__group-label heading heading--line">Комментарий</p>
-          <div class="form__row">
+        <div class="line">
+          <div class="container">
+            <p class="form__group-label heading heading--line">
+              Комментарий
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="form__row form__comment-block">
             <textarea name="comment" rows="10">
 Расскажите обо всех повадках кота</textarea
             >
           </div>
+        </div>
 
-          <p class="form__group-label heading heading--line">Дополнительно</p>
-          <div class="form__row form__extra-block">
-            <div>
-              <input
-                type="checkbox"
-                name="sweetener"
-                id="extra-sweetener"
-                checked
-              />
-              <label for="extra-sweetener">Сахарозаменитель</label>
-            </div>
-            <div>
-              <input type="checkbox" name="water" id="extra-water" />
-              <label for="extra-water">Питьевая вода</label>
-            </div>
-            <div>
-              <input type="checkbox" name="milk" id="extra-milk" />
-              <label for="extra-milk">Молоко</label>
-            </div>
-            <div>
-              <input type="checkbox" name="vitamins" id="extra-vitamins" />
-              <label for="extra-vitamins">Витамины</label>
-            </div>
+        <div class="line">
+          <div class="container">
+            <p
+              class="form__group-label form__group-label--extra heading heading--line"
+            >
+              Дополнительно
+            </p>
           </div>
+        </div>
 
+        <div class="container">
+          <div class="form__row form__extra-block">
+            <label class="checkbox"
+              >Сахарозаменитель
+              <input type="checkbox" name="sweetener" checked />
+              <span class="checkbox__checkmark"></span>
+            </label>
+            <label class="checkbox"
+              >Питьевая вода
+              <input type="checkbox" name="water" />
+              <span class="checkbox__checkmark"></span>
+            </label>
+            <label class="checkbox"
+              >Молоко
+              <input type="checkbox" name="milk" />
+              <span class="checkbox__checkmark"></span>
+            </label>
+            <label class="checkbox"
+              >Витамины
+              <input type="checkbox" name="vitamins" />
+              <span class="checkbox__checkmark"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="container">
           <input
             class="form__submit button"
             type="submit"
@@ -161,19 +193,24 @@
           <small class="form__legend text">
             <sup>*</sup> — Обязательные поля
           </small>
-        </form>
-      </div>
-    </main>
+        </div>
+      </form>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="relative">
         <section class="contacts">
-          <h2 class="contants__title">
-            Приглашаем к сотрудничеству дилеров!
-          </h2>
-          <p class="contacts__text text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
+          <div class="container">
+            <div class="contacts__wrapper">
+              <h2 class="contants__title">
+                Приглашаем к сотрудничеству дилеров!
+              </h2>
+              <p class="contacts__text text">
+                ул. Большая Конюшенная, д. 19/8<span
+                  class="contants__divider"
+                ></span>
+                Санкт-Петербург
+              </p>
+            </div>
+          </div>
         </section>
 
         <section class="map">
@@ -185,8 +222,12 @@
             alt="Точка на карте"
           />
         </section>
+      </div>
+    </main>
 
-        <section class="social">
+    <footer>
+      <section class="social">
+        <div class="social__wrapper container">
           <a class="social__logo">
             <img
               src="./img/logo-footer.svg"
@@ -219,16 +260,16 @@
             </li>
           </ul>
           <div class="social__academy">
-            <p>HTML Academy</p>
+            <p class="social__academy-text">HTML Academy</p>
             <img
               src="./img/htmlacademy.svg"
-              width="27"
-              height="34"
+              width="40"
+              height="50"
               alt="Логотип HTML Academy"
             />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

@@ -1,4 +1,3 @@
-// TODO: temp
 if (document.location.hash === "#pixel-perfect") {
   if (document.location.pathname === "/") {
     if (window.matchMedia("(min-width: 1200px)").matches) {
@@ -22,7 +21,7 @@ if (document.location.hash === "#pixel-perfect") {
         'url("../img/preview/cat-energy-catalog-tablet.png") no-repeat 50% 0';
     } else {
       document.body.style.background =
-        'url("../img/preview/cat-energy-catalog-mobile.png") no-repeat 50% 0';
+        'url("../img/preview/cat-energy-catalog-mobile.png") no-repeat 50% -198px';
     }
   }
 
@@ -35,7 +34,7 @@ if (document.location.hash === "#pixel-perfect") {
         'url("../img/preview/cat-energy-form-tablet.png") no-repeat 50% 0';
     } else {
       document.body.style.background =
-        'url("../img/preview/cat-energy-form-mobile.png") no-repeat 50% 0';
+        'url("../img/preview/cat-energy-form-mobile.png") no-repeat 50% -198px';
     }
   }
 }

@@ -7,4 +7,25 @@
 
 .heading--line {
   font-size: 24px;
+  position: relative;
+  max-width: 205px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background: white;
+  display: inline-block;
+  margin-top: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .heading--line {
+    max-width: none;
+    font-size: 36px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .heading--line {
+    margin-left: -40px;
+  }
 }
