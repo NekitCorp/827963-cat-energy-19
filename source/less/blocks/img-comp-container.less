@@ -1,0 +1,68 @@
+.img-compare {
+  position: relative;
+  height: 517px; /* should be the same height as the images */
+  box-sizing: border-box;
+}
+
+.img-compare__image {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-compare__image img {
+  display: block;
+}
+
+.img-compare__before img {
+  object-fit: cover;
+  object-position: right;
+}
+
+.img-compare__slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  bottom: -40px;
+  width: 32px;
+  height: 32px;
+  background-color: @white;
+  border: 1px solid @border;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: @leaf;
+  }
+}
+
+.img-compare__progress {
+  position: absolute;
+  z-index: 8;
+  bottom: -27px;
+  width: 428px;
+  height: 6px;
+  border-radius: 2.5px;
+  background: @leaf;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 428px;
+    height: 100%;
+    background-color: @white-six;
+    border-radius: 2.5px;
+  }
+}
