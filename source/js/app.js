@@ -29,7 +29,7 @@ function initComparisons() {
   after.style.width = w / 2 + "px";
   /* Position the slider in the middle: */
   slider.style.left = w / 2 - slider.offsetWidth / 2 + "px";
-  progress.style.left = w / 2 - progress.offsetWidth / 2 + "px";
+  // progress.style.left = w / 2 - progress.offsetWidth / 2 + "px";
   /* Execute a function when the mouse button is pressed: */
   slider.addEventListener("mousedown", slideReady);
   /* And another function when the mouse button is released: */
