@@ -26,15 +26,17 @@
   border-radius: 6px;
   border: solid 1px @very-light-pink-three;
   background-color: @white;
+  padding: 3px 6px;
+  box-sizing: border-box;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 428px;
-  //   height: 100%;
-  //   background-color: @white-six;
-  //   border-radius: 2.5px;
-  // }
+  &::before {
+    content: "";
+    display: block;
+    background-color: @leaf;
+    border-radius: 2.5px;
+    height: 6px;
+    width: 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -56,5 +58,9 @@
     height: 6px;
     border-radius: 2.5px;
     background: @white-six;
+
+    &::before {
+      content: none;
+    }
   }
 }

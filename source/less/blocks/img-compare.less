@@ -27,18 +27,18 @@
   z-index: 9;
   cursor: ew-resize;
   top: 0;
-  bottom: 0;
+  bottom: -48px;
   width: 32px;
 }
 
 @media (min-width: @tablet-width) {
   .img-compare__slider {
-    bottom: -49px;
     height: 32px;
+    top: auto;
     background-color: @white;
     border: 1px solid @border;
     border-radius: 50%;
-    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
     &::after {
       content: "";

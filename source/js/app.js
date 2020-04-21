@@ -16,12 +16,13 @@ function initComparisons() {
   var after = document.querySelector(".img-compare__after");
   var beforeImage = document.querySelector(".img-compare__before img");
   var slider = document.querySelector(".img-compare__slider");
-  var progress = document.querySelector(".img-compare__progress");
+  var progress = document.querySelector(".compare-info__progress");
   var clicked = 0;
 
   /* Get the width and height of the img element */
   var w = after.offsetWidth;
   var h = after.offsetHeight;
+  var progressWidth = progress.offsetWidth - 2 * 6 - 1 * 2; // padding * 2 + border * 2
   /* Init before img */
   beforeImage.style.marginLeft = w / 2 + "px";
   beforeImage.style.width = w / 2 + "px";
@@ -29,6 +30,8 @@ function initComparisons() {
   after.style.width = w / 2 + "px";
   /* Position the slider in the middle: */
   slider.style.left = w / 2 - slider.offsetWidth / 2 + "px";
+  /* Position progress in the middle: */
+  progress.style.paddingRight = Math.round(progressWidth / 2) + 6 + "px";
   // progress.style.left = w / 2 - progress.offsetWidth / 2 + "px";
   /* Execute a function when the mouse button is pressed: */
   slider.addEventListener("mousedown", slideReady);
@@ -81,13 +84,16 @@ function initComparisons() {
     }
 
     function slide(x) {
-      /* Resize the image: */
+      /* Resize after image: */
       after.style.width = x + "px";
       /* Position the slider: */
       slider.style.left = after.offsetWidth - slider.offsetWidth / 2 + "px";
-
-      beforeImage.style.marginLeft = x + "px";
+      /* Position before image: */
       beforeImage.style.width = w - x + "px";
+      beforeImage.style.marginLeft = x + "px";
+      /* Position progress: */
+      progress.style.paddingRight =
+        progressWidth + 6 - Math.round(progressWidth * (x / w)) + "px";
     }
   }
 }
