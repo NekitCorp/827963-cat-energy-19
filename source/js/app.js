@@ -13,6 +13,10 @@ toggleElem.onclick = function () {
 };
 
 function initComparisons() {
+  if (document.location.pathname !== "/") {
+    return;
+  }
+
   var after = document.querySelector(".img-compare__after");
   var beforeImage = document.querySelector(".img-compare__before img");
   var slider = document.querySelector(".img-compare__slider");

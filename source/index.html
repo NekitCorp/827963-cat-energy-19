@@ -2,20 +2,20 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script defer src="./js/app.js"></script>
-  <script defer src="./js/pixel-perfect.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script defer src="./js/app.min.js"></script>
   <script>document.createElement("picture");</script>
-  <script src="./js/picturefill.min.js" async></script>
-  <script src="./js/svg4everybody.min.js"></script>
-  <script>svg4everybody();</script>
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header page-header--no-js">
     <div class="page-header__wrapper">
       <div class="page-header__main-wrapper">
@@ -58,22 +58,21 @@
           </blockquote>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="./img/webp/index-can-desktop@1x.webp 1x, ./img/webp/index-can-desktop@2x.webp 2x">
+              srcset="./img/index-can-desktop@1x.webp 1x, ./img/index-can-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/webp/index-can-tablet@1x.webp 1x, ./img/webp/index-can-tablet@2x.webp 2x">
-            <source type="image/webp"
-              srcset="./img/webp/index-can-mobile@1x.webp 1x, ./img/webp/index-can-mobile@2x.webp 2x">
+              srcset="./img/index-can-tablet@1x.webp 1x, ./img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/index-can-mobile@1x.webp 1x, ./img/index-can-mobile@2x.webp 2x">
 
             <source media="(min-width: 1200px)" srcset="
                   ./img/index-can-desktop@1x.png 1x,
                   ./img/index-can-desktop@2x.png 2x
-                " />
+                ">
             <source media="(min-width: 768px)" srcset="
                   ./img/index-can-tablet@1x.jpg 1x,
                   ./img/index-can-tablet@2x.jpg 2x
-                " />
+                ">
             <img src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x" alt="Банка с продукцией"
-              class="about__can-image" width="280" height="270" />
+              class="about__can-image" width="280" height="270">
           </picture>
           <a class="about__pick-up button" href="form.html">Подобрать
             программу</a>
@@ -86,7 +85,7 @@
         <li class="program__item">
           <div class="program__icon-background">
             <img class="program__icon program__icon--slim" src="./img/icon-cat-slim.svg" width="35" height="49"
-              alt="Стройный кот" />
+              alt="Стройный кот">
           </div>
           <h3 class="program__title">
             Похудение</h3>
@@ -103,14 +102,13 @@
           </div>
           <a href="#" class="program__link">
             Каталог slim
-            <img class="program__arrow" src="./img/icon-right-arrow-verylong.svg" width="25" height="12"
-              alt="Стрелка" />
+            <img class="program__arrow" src="./img/icon-right-arrow-verylong.svg" width="25" height="12" alt="Стрелка">
           </a>
         </li>
         <li class="program__item">
           <div class="program__icon-background">
             <img class="program__icon program__icon--pro" src="./img/icon-cat-pro.svg" width="67" height="28"
-              alt="Тигр" />
+              alt="Тигр">
           </div>
           <h3 class="program__title">
             Набор массы</h3>
@@ -126,8 +124,7 @@
           </div>
           <a href="#" class="program__link">
             Каталог pro
-            <img class="program__arrow" src="./img/icon-right-arrow-verylong.svg" width="25" height="12"
-              alt="Стрелка" />
+            <img class="program__arrow" src="./img/icon-right-arrow-verylong.svg" width="25" height="12" alt="Стрелка">
           </a>
         </li>
       </ul>
@@ -230,12 +227,12 @@
                   <source media="(min-width: 1200px)" srcset="
                         ./img/before-desktop@1x.png 1x,
                         ./img/before-desktop@2x.png 2x
-                      " />
+                      ">
                   <source media="(min-width: 768px)" srcset="
                         ./img/before-tablet@1x.png 1x,
                         ./img/before-tablet@2x.png 2x
-                      " />
-                  <img src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" alt="Пример кота до" />
+                      ">
+                  <img src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" alt="Пример кота до">
                 </picture>
               </div>
               <div class="img-compare__slider"></div>
@@ -244,12 +241,12 @@
                   <source media="(min-width: 1200px)" srcset="
                         ./img/after-desktop@1x.png 1x,
                         ./img/after-desktop@2x.png 2x
-                      " />
+                      ">
                   <source media="(min-width: 768px)" srcset="
                         ./img/after-tablet@1x.png 1x,
                         ./img/after-tablet@2x.png 2x
-                      " />
-                  <img src="./img/after-mobile@1x.png" srcset="./img/after-mobile@2x.png 2x" alt="Пример кота до" />
+                      ">
+                  <img src="./img/after-mobile@1x.png" srcset="./img/after-mobile@2x.png 2x" alt="Пример кота до">
                 </picture>
               </div>
             </div>
@@ -262,20 +259,20 @@
           </div>
         </div>
       </div>
-      </div>
+
     </section>
 
     <div class="relative">
       <section class="contacts contacts--index">
         <div class="container">
           <div class="contacts__wrapper">
-            <h2 class="contants__title">
+            <h2 class="contacts__title">
               Приглашаем к
               сотрудничеству дилеров!
             </h2>
             <p class="contacts__text text">
               ул. Большая Конюшенная, д.
-              19/8<span class="contants__divider"></span>
+              19/8<span class="contacts__divider"></span>
               Санкт-Петербург
             </p>
           </div>
@@ -283,7 +280,7 @@
       </section>
 
       <section class="map">
-        <img class="map__pin" src="./img/map-pin.png" width="55" height="53" alt="Точка на карте" />
+        <img class="map__pin" src="./img/map-pin.png" width="55" height="53" alt="Точка на карте">
       </section>
     </div>
   </main>
@@ -292,27 +289,27 @@
     <section class="social">
       <div class="social__wrapper container">
         <a href="/" class="social__logo">
-          <img src="./img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи" />
+          <img src="./img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
         </a>
         <ul class="social__list list-reset">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">
               <svg class="social__vk" width="22" height="12">
-                <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com/htmlacademy">
               <svg class="social__instagram" width="17" height="17">
-                <use xlink:href="./img/sprite.svg#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <svg class="social__fb" width="10" height="19">
-                <use xlink:href="./img/sprite.svg#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -320,7 +317,7 @@
         <a href="https://htmlacademy.ru/" class="social__academy">
           <p class="social__academy-text">HTML Academy</p>
           <svg class="social__academy-icon" width="40" height="50">
-            <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
