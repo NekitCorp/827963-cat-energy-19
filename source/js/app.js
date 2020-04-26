@@ -1,7 +1,7 @@
-var paheHeader = document.querySelector(".page-header");
+var pageHeader = document.querySelector(".page-header");
 var mainNav = document.querySelector(".main-nav");
 
-paheHeader.classList.remove("page-header--no-js");
+pageHeader.classList.remove("page-header--no-js");
 mainNav.classList.add("main-nav--mobile-close");
 
 var menuElem = document.getElementById("menu");
@@ -13,15 +13,15 @@ toggleElem.onclick = function () {
 };
 
 function initComparisons() {
-  if (document.location.pathname !== "/") {
-    return;
-  }
-
   var after = document.querySelector(".img-compare__after");
   var beforeImage = document.querySelector(".img-compare__before img");
   var slider = document.querySelector(".img-compare__slider");
   var progress = document.querySelector(".compare-info__progress");
   var clicked = 0;
+
+  if (!after) {
+    return;
+  }
 
   /* Get the width and height of the img element */
   var w = after.offsetWidth;
