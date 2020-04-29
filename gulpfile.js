@@ -18,6 +18,7 @@ var del = require("del");
 var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
 var htmlmin = require("gulp-htmlmin");
+var objectFitImages = require("postcss-object-fit-images");
 
 gulp.task("images", function () {
   return gulp
@@ -57,7 +58,7 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([objectFitImages, autoprefixer()]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
