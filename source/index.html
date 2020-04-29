@@ -20,7 +20,7 @@
     <div class="page-header__wrapper">
       <div class="page-header__main-wrapper">
         <div class="page-header__main container">
-          <a class="page-header__logo"></a>
+          <a href="/index.html" class="page-header__logo"></a>
           <button id="menu-toggle" class="page-header__toggle page-header__toggle--open" type="button">
             Открыть меню
           </button>
@@ -32,11 +32,11 @@
             <a>Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог
+            <a href="/catalog.html">Каталог
               продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Подбор
+            <a href="/form.html">Подбор
               программы</a>
           </li>
         </ul>
@@ -100,9 +100,8 @@
           </p>
           <div class="program__divider">
           </div>
-          <a href="#" class="program__link">
-            Каталог slim
-            <img class="program__arrow" src="./img/icon-right-arrow-verylong.svg" width="25" height="12" alt="Стрелка">
+          <a href="/catalog.html" class="program__link">
+            Каталог slim<span class="program__arrow"></span>
           </a>
         </li>
         <li class="program__item">
@@ -122,9 +121,8 @@
           </p>
           <div class="program__divider">
           </div>
-          <a href="#" class="program__link">
-            Каталог pro
-            <img class="program__arrow" src="./img/icon-right-arrow-verylong.svg" width="25" height="12" alt="Стрелка">
+          <a href="/catalog.html" class="program__link">
+            Каталог pro<span class="program__arrow"></span>
           </a>
         </li>
       </ul>
@@ -224,6 +222,12 @@
             <div class="img-compare">
               <div class="img-compare__image img-compare__before">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="./img/before-desktop@1x.webp 1x, ./img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/before-tablet@1x.webp 1x, ./img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/before-mobile@1x.webp 1x, ./img/before-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="
                         ./img/before-desktop@1x.png 1x,
                         ./img/before-desktop@2x.png 2x
@@ -238,6 +242,12 @@
               <div class="img-compare__slider"></div>
               <div class="img-compare__image img-compare__after">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="./img/after-desktop@1x.webp 1x, ./img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/after-tablet@1x.webp 1x, ./img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/after-mobile@1x.webp 1x, ./img/after-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="
                         ./img/after-desktop@1x.png 1x,
                         ./img/after-desktop@2x.png 2x

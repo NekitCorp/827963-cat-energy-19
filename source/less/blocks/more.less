@@ -35,6 +35,15 @@
   margin-top: 21px;
   background-color: @white-three;
   color: @greyish-brown;
+
+  &:hover {
+    background-color: @white-seven;
+  }
+
+  &:active {
+    background-color: @white-seven;
+    color: fade(@greyish-brown, 30%);
+  }
 }
 
 @media (min-width: @tablet-width) {
