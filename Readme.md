@@ -7,11 +7,7 @@
 
 TODO:
 
-- https://up.htmlacademy.ru/adaptive/19/project/cat-energy#cat-energy-4-5
 - тестирование Safari??
-- https://up.htmlacademy.ru/adaptive/19/project/cat-energy#cat-energy-6-1
-- https://up.htmlacademy.ru/adaptive/19/project/cat-energy#cat-energy-6-2
-- https://up.htmlacademy.ru/adaptive/19/project/cat-energy#cat-energy-6-3
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 

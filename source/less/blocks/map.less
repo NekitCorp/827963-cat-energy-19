@@ -1,52 +1,15 @@
 .map {
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-size: auto 362px;
   height: 362px;
-  position: relative;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-map-mobile@2x.png");
-  }
-}
-
-.map__pin {
-  position: absolute;
-  top: 137px;
-  left: 131px;
 }
 
 @media (min-width: @tablet-width) {
   .map {
     height: 396px;
-    background-image: url("../img/bg-map-tablet@1x.png");
-    background-size: auto 396px;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-map-tablet@2x.png");
-    }
-  }
-
-  .map__pin {
-    width: 124px;
-    height: 106px;
-    top: 141px;
-    left: 333px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
     height: 400px;
-    background-image: url("../img/bg-map-desktop@1x.png");
-    background-size: auto 400px;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-map-desktop@2x.png");
-    }
-  }
-
-  .map__pin {
-    top: 152px;
-    left: 1002px;
   }
 }
