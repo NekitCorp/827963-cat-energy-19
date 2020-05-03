@@ -1,5 +1,11 @@
 .map {
   height: 362px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: auto 362px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
 }
 
 .map iframe {
@@ -11,11 +17,23 @@
 @media (min-width: @tablet-width) {
   .map {
     height: 396px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-size: auto 396px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
     height: 400px;
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-size: auto 400px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }
