@@ -67,12 +67,17 @@
   }
 }
 
+.form input[type="tel"],
+.form input[type="email"] {
+  padding: 0 10px;
+}
+
 .form__addon {
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto 0;
-  right: 15px;
+  right: 14px;
   fill: @black-two;
 }
 
@@ -180,8 +185,12 @@
     line-height: 1;
   }
 
+  .form input[type="email"] {
+    margin-left: 19px;
+  }
+
   .form__addon {
-    right: 60px;
+    right: 53px;
   }
 
   .form textarea {
