@@ -110,6 +110,7 @@ function initComparisons() {
     /* Position before image: */
     beforeImage.style.width = w - x + "px";
     beforeImage.style.marginLeft = x + "px";
+    beforeImage.style.objectPosition = "right";
     /* Position progress: */
     progress.style.paddingRight =
       progressWidth + 6 - Math.round(progressWidth * (x / w)) + "px";
