@@ -20,7 +20,7 @@
     <div class="page-header__wrapper">
       <div class="page-header__main-wrapper">
         <div class="page-header__main container">
-          <a href="index.html" class="page-header__logo"></a>
+          <a href="index.html" class="page-header__logo">Логотип</a>
           <button id="menu-toggle" class="page-header__toggle page-header__toggle--open" type="button">
             Открыть меню
           </button>
@@ -216,8 +216,29 @@
             </p>
           </div>
           <div class="example__interactive">
+            <span class="visually-hidden">Интерактивный элемент для сравнения результатов</span>
             <div class="img-compare">
               <div class="img-compare__image img-compare__before">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="./img/after-desktop@1x.webp 1x, ./img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/after-tablet@1x.webp 1x, ./img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/after-mobile@1x.webp 1x, ./img/after-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="
+                        ./img/after-desktop@1x.png 1x,
+                        ./img/after-desktop@2x.png 2x
+                      ">
+                  <source media="(min-width: 768px)" srcset="
+                        ./img/after-tablet@1x.png 1x,
+                        ./img/after-tablet@2x.png 2x
+                      ">
+                  <img src="./img/after-mobile@1x.png" srcset="./img/after-mobile@2x.png 2x" alt="Пример кота после">
+                </picture>
+              </div>
+              <div class="img-compare__slider"></div>
+              <div class="img-compare__image img-compare__after">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
                     srcset="./img/before-desktop@1x.webp 1x, ./img/before-desktop@2x.webp 2x">
@@ -234,26 +255,6 @@
                         ./img/before-tablet@2x.png 2x
                       ">
                   <img src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" alt="Пример кота до">
-                </picture>
-              </div>
-              <div class="img-compare__slider"></div>
-              <div class="img-compare__image img-compare__after">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="./img/after-desktop@1x.webp 1x, ./img/after-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="./img/after-tablet@1x.webp 1x, ./img/after-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/after-mobile@1x.webp 1x, ./img/after-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1200px)" srcset="
-                        ./img/after-desktop@1x.png 1x,
-                        ./img/after-desktop@2x.png 2x
-                      ">
-                  <source media="(min-width: 768px)" srcset="
-                        ./img/after-tablet@1x.png 1x,
-                        ./img/after-tablet@2x.png 2x
-                      ">
-                  <img src="./img/after-mobile@1x.png" srcset="./img/after-mobile@2x.png 2x" alt="Пример кота до">
                 </picture>
               </div>
             </div>
@@ -274,8 +275,7 @@
         <div class="container">
           <div class="contacts__wrapper">
             <h2 class="contacts__title">
-              Приглашаем к
-              сотрудничеству дилеров!
+              Приглашаем <span class="contacts__newline">к сотрудничеству</span> дилеров!
             </h2>
             <p class="contacts__text text">
               ул. Большая Конюшенная, д.
@@ -299,11 +299,13 @@
       <h2 class="visually-hidden">Контакты</h2>
       <div class="social__wrapper container">
         <a href="index.html" class="social__logo">
+          Логотип
           <img src="./img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
         </a>
         <ul class="social__list list-reset">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">
+              Мы в VK
               <svg class="social__vk" width="22" height="12">
                 <use xlink:href="#icon-vk"></use>
               </svg>
@@ -311,6 +313,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              Мы в Instagram
               <svg class="social__instagram" width="17" height="17">
                 <use xlink:href="#icon-insta"></use>
               </svg>
@@ -318,6 +321,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              Мы в Facebook
               <svg class="social__fb" width="10" height="19">
                 <use xlink:href="#icon-fb"></use>
               </svg>
@@ -326,7 +330,7 @@
         </ul>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="social__academy">
           <p class="social__academy-text">HTML Academy</p>
-          <svg class="social__academy-icon" width="40" height="50">
+          <svg class="social__academy-icon" width="27" height="34">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>

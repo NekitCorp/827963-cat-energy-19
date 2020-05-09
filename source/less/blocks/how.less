@@ -1,17 +1,18 @@
 .how__wrapper {
   min-height: 447px;
-  padding-top: 30px;
+  padding-top: 17px;
   box-sizing: border-box;
 }
 
 .how__title {
-  margin-bottom: 38px;
+  margin-bottom: 28px;
   margin-top: 0;
+  line-height: 1.67;
 }
 
 .how__item {
   display: flex;
-  height: 60px;
+  min-height: 60px;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -24,6 +25,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60px 60px;
+}
+
+.how__description {
+  line-height: 1.29;
+  margin: 0;
 }
 
 .how__icon--leaf {
@@ -71,6 +77,7 @@
   .how__title {
     font-size: 60px;
     margin-bottom: 38px;
+    line-height: 1;
   }
 
   .how__list {
@@ -80,7 +87,7 @@
 
   .how__item {
     width: 324px;
-    height: 213px;
+    min-height: 213px;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
@@ -101,12 +108,16 @@
       bottom: -29px;
       line-height: 1;
     }
+
+    &:nth-child(1)::after {
+      right: 95px;
+    }
   }
 
   .how__icon {
     min-width: 80px;
     min-height: 80px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
 
   .how__description {
@@ -136,6 +147,10 @@
 
     &::after {
       right: 0;
+    }
+
+    &:nth-child(1)::after {
+      right: 16px;
     }
   }
 }

@@ -1,12 +1,14 @@
 .main-nav__item {
   height: 65px;
   border-bottom: 1px solid @light-gray;
-  text-align: center;
-  line-height: 65px;
   font-size: 20px;
-  color: @black;
+  line-height: 1;
   font-weight: 500;
+  color: @black;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-nav__item a {
@@ -48,11 +50,12 @@
   .main-nav__item {
     border: none;
     font-size: 18px;
-    line-height: 71px;
+    line-height: 1.39;
     color: @black-two;
     font-weight: normal;
     margin: 0;
     padding: 0;
+    height: 58px;
 
     &--active {
       position: relative;
@@ -77,7 +80,8 @@
 
   .main-nav__item {
     font-size: 20px;
-    line-height: 74px;
+    line-height: 1.25;
+    height: 56px;
 
     &--active {
       &::after {

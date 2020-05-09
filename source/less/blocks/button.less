@@ -7,12 +7,17 @@
   background-color: @leaf;
   color: @white;
   width: 100%;
-  display: block;
   text-align: center;
-  line-height: 40px;
+  line-height: 1.25;
   letter-spacing: normal;
   font-size: 16px;
-  height: 40px;
+  min-height: 40px;
+  height: 0; // IE fix
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 .button:hover {
@@ -27,7 +32,6 @@
 @media (min-width: @tablet-width) {
   .button {
     font-size: 20px;
-    height: 52px;
-    line-height: 52px;
+    min-height: 52px;
   }
 }

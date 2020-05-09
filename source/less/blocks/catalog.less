@@ -1,17 +1,17 @@
 .catalog {
   min-height: 1776px;
   box-sizing: border-box;
-  padding-top: 27px;
-  height: 0; // IE11 fix
+  padding-top: 15px;
 }
 
 .catalog__title {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
+  line-height: 1.67;
 }
 
 .catalog__item {
-  height: 208px;
+  min-height: 208px;
 }
 
 @media (min-width: @tablet-width) {
@@ -30,7 +30,7 @@
 
   .catalog__item {
     width: 324px;
-    height: 431px;
+    min-height: 431px;
     margin: 0;
     padding: 0 38px;
     padding-top: 163px;
@@ -49,8 +49,7 @@
 
   .catalog__order {
     font-size: 16px;
-    height: 40px;
-    line-height: 40px;
+    min-height: 40px;
   }
 }
 
@@ -58,6 +57,7 @@
   .catalog {
     min-height: 1305px;
     padding-top: 75px;
+    height: 0; // IE11 fix
   }
 
   .catalog__item {
